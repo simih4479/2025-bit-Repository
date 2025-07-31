@@ -1,6 +1,6 @@
 # Ask user for width until
 # they enter a number that is more tham zero
-def int_check(question, low):
+def int_check(question: object, low: object) -> object:
 
     error = f"Please enter a number that is more than zer{low}\n"
     while True:
@@ -22,16 +22,16 @@ def int_check(question, low):
 
 # main routine goes here
 for item in range (0, 2):
-    integer = int_check(question: "Integer: ", low: 0)
-    print(Integer)
+    integer = int_check("Integer: ", 0)
+    print(integer)
 
 print()
 
 for item in range (0, 2):
-    height = int_check(question "Width: ", low: 1)
+    height = int_check("Width: ", 1)
     print(width)
 
 print()
 for item in range (0, 2):
-    height = int_check(question "Height: ", low: 1)
+    height = int_check("Height: ", 1)
     print(height)
